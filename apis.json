@@ -1,0 +1,71 @@
+{
+	"name": "Streadata.io API Gallery - Pull",
+	"description": "This is a repository of pull APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/pull.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-28",
+	"url": "http://pull.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "AngelList",
+			"x-api-slug": "angellist",
+			"description": "AngelList is where the world meets startups. Find a great startup job, invest in a startup, or raise money",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/339-angellist.jpg",
+			"humanURL": "http://angel.co",
+			"baseURL": "https://api.angel.co//1/",
+			"tags": "Pull",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/pull/master/_listings/angellist/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Envestnet",
+			"x-api-slug": "envestnet",
+			"description": "Build and transform financial apps and services with access to financial data through our APIs and digital solutions for banks, developers, and innovators.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1691-yodlee.jpg",
+			"humanURL": "http://www.yodlee.com/",
+			"baseURL": "https://api.crunchbase.com//v/3",
+			"tags": "Pull",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/pull/master/_listings/envestnet/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Bitbucket",
+			"x-api-slug": "bitbucket",
+			"description": "Collaborate on code with inline comments and pull requests. Manage and share your Git repositories to build and ship software, as a team.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg",
+			"humanURL": "http://bitbucket.org",
+			"baseURL": "https://api.bitbucket.org//2.0",
+			"tags": "Pull",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/pull/master/_listings/bitbucket/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Pull",
+	"include": [
+		{
+			"name": "AngelList",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/pull/master/_listings/angellist/apis.yaml"
+		},
+		{
+			"name": "Envestnet",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/pull/master/_listings/envestnet/apis.yaml"
+		},
+		{
+			"name": "Bitbucket",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/pull/master/_listings/bitbucket/apis.yaml"
+		}
+	]
+}

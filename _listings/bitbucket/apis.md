@@ -7,8 +7,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitb
 x-kinRank: "8"
 x-alexaRank: "901"
 tags: Pull
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/pull/master/_listings/bitbucket/apis.md
 specificationVersion: "0.14"
 apis:
@@ -38,6 +38,22 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/pull/master/_listings/bitbucket/repositoriesusernamerepo-slugpullrequestspull-request-id-parameters-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/pull/master/_listings/bitbucket/repositoriesusernamerepo-slugpullrequestspull-request-id-parameters-openapi.md
+- name: Bitbucket - Update Repositories Username Repo Slug Pullrequests Pull Request
+  x-api-slug: repositoriesusernamerepo-slugpullrequestspull-request-id-put
+  description: |-
+    Mutates the specified pull request.
+
+    This can be used to change the pull request's branches or description.
+
+    Only open pull requests can be mutated.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
+  humanURL: http://bitbucket.org
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/pull/master/_listings/bitbucket/repositoriesusernamerepo-slugpullrequestspull-request-id-put-openapi.md
 - name: Bitbucket - Get Repositories Username Repo Slug Pullrequests Pull Request  Activity
   x-api-slug: repositoriesusernamerepo-slugpullrequestspull-request-idactivity-get
   description: |-
@@ -268,6 +284,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/pull/master/_listings/bitbucket/repositoriesusernamerepo-slugpullrequestspull-request-idmerge-parameters-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/pull/master/_listings/bitbucket/repositoriesusernamerepo-slugpullrequestspull-request-idmerge-parameters-openapi.md
+- name: Bitbucket - Add Repositories Username Repo Slug Pullrequests Pull Request  Merge
+  x-api-slug: repositoriesusernamerepo-slugpullrequestspull-request-idmerge-post
+  description: Post repositories username repo slug pullrequests pull request  merge
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
+  humanURL: http://bitbucket.org
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/pull/master/_listings/bitbucket/repositoriesusernamerepo-slugpullrequestspull-request-idmerge-post-openapi.md
 - name: Bitbucket - Get Repositories Username Repo Slug Pullrequests Pull Request  Patch
   x-api-slug: repositoriesusernamerepo-slugpullrequestspull-request-idpatch-get
   description: Get repositories username repo slug pullrequests pull request  patch

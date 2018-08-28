@@ -3,10 +3,8 @@ swagger: "2.0"
 x-collection-name: Bitbucket
 x-complete: 0
 info:
-  title: Bitbucket Parameters Repositories Username Repo Slug Pullrequests Pull Request  Comments
-    Comment
-  description: Parameters repositories username repo slug pullrequests pull request  comments
-    comment
+  title: Bitbucket Add Repositories Username Repo Slug Pullrequests Pull Request  Merge
+  description: Post repositories username repo slug pullrequests pull request  merge
   termsOfService: https://www.atlassian.com/legal/customer-agreement
   contact:
     name: Bitbucket Support
@@ -303,6 +301,163 @@ paths:
       - ""
       - Comments
       - Comment
+  /repositories/{username}/{repo_slug}/pullrequests/{pull_request_id}/commits:
+    get:
+      summary: Get Repositories Username Repo Slug Pullrequests Pull Request  Commits
+      description: |-
+        Returns a paginated list of the pull request's commits.
+
+        These are the commits that are being merged into the destination
+        branch when the pull requests gets accepted.
+      operationId: getRepositoriesUsernameRepoSlugPullrequestsPullRequestCommits
+      x-api-path-slug: repositoriesusernamerepo-slugpullrequestspull-request-idcommits-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - Repositories
+      - Username
+      - Repo
+      - Slug
+      - Pullrequests
+      - Pull
+      - Request
+      - ""
+      - Commits
+    parameters:
+      summary: Parameters Repositories Username Repo Slug Pullrequests Pull Request  Commits
+      description: Parameters repositories username repo slug pullrequests pull request  commits
+      operationId: parametersRepositoriesUsernameRepoSlugPullrequestsPullRequestCommits
+      x-api-path-slug: repositoriesusernamerepo-slugpullrequestspull-request-idcommits-parameters
+      responses:
+        200:
+          description: OK
+      tags:
+      - Repositories
+      - Username
+      - Repo
+      - Slug
+      - Pullrequests
+      - Pull
+      - Request
+      - ""
+      - Commits
+  /repositories/{username}/{repo_slug}/pullrequests/{pull_request_id}/decline:
+    parameters:
+      summary: Parameters Repositories Username Repo Slug Pullrequests Pull Request  Decline
+      description: Parameters repositories username repo slug pullrequests pull request  decline
+      operationId: parametersRepositoriesUsernameRepoSlugPullrequestsPullRequestDecline
+      x-api-path-slug: repositoriesusernamerepo-slugpullrequestspull-request-iddecline-parameters
+      responses:
+        200:
+          description: OK
+      tags:
+      - Repositories
+      - Username
+      - Repo
+      - Slug
+      - Pullrequests
+      - Pull
+      - Request
+      - ""
+      - Decline
+    post:
+      summary: Add Repositories Username Repo Slug Pullrequests Pull Request  Decline
+      description: Post repositories username repo slug pullrequests pull request  decline
+      operationId: postRepositoriesUsernameRepoSlugPullrequestsPullRequestDecline
+      x-api-path-slug: repositoriesusernamerepo-slugpullrequestspull-request-iddecline-post
+      responses:
+        200:
+          description: OK
+      tags:
+      - Repositories
+      - Username
+      - Repo
+      - Slug
+      - Pullrequests
+      - Pull
+      - Request
+      - ""
+      - Decline
+  /repositories/{username}/{repo_slug}/pullrequests/{pull_request_id}/diff:
+    get:
+      summary: Get Repositories Username Repo Slug Pullrequests Pull Request  Diff
+      description: Get repositories username repo slug pullrequests pull request  diff
+      operationId: getRepositoriesUsernameRepoSlugPullrequestsPullRequestDiff
+      x-api-path-slug: repositoriesusernamerepo-slugpullrequestspull-request-iddiff-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - Repositories
+      - Username
+      - Repo
+      - Slug
+      - Pullrequests
+      - Pull
+      - Request
+      - ""
+      - Diff
+    parameters:
+      summary: Parameters Repositories Username Repo Slug Pullrequests Pull Request  Diff
+      description: Parameters repositories username repo slug pullrequests pull request  diff
+      operationId: parametersRepositoriesUsernameRepoSlugPullrequestsPullRequestDiff
+      x-api-path-slug: repositoriesusernamerepo-slugpullrequestspull-request-iddiff-parameters
+      responses:
+        200:
+          description: OK
+      tags:
+      - Repositories
+      - Username
+      - Repo
+      - Slug
+      - Pullrequests
+      - Pull
+      - Request
+      - ""
+      - Diff
+  /repositories/{username}/{repo_slug}/pullrequests/{pull_request_id}/merge:
+    parameters:
+      summary: Parameters Repositories Username Repo Slug Pullrequests Pull Request  Merge
+      description: Parameters repositories username repo slug pullrequests pull request  merge
+      operationId: parametersRepositoriesUsernameRepoSlugPullrequestsPullRequestMerge
+      x-api-path-slug: repositoriesusernamerepo-slugpullrequestspull-request-idmerge-parameters
+      responses:
+        200:
+          description: OK
+      tags:
+      - Repositories
+      - Username
+      - Repo
+      - Slug
+      - Pullrequests
+      - Pull
+      - Request
+      - ""
+      - Merge
+    post:
+      summary: Add Repositories Username Repo Slug Pullrequests Pull Request  Merge
+      description: Post repositories username repo slug pullrequests pull request  merge
+      operationId: postRepositoriesUsernameRepoSlugPullrequestsPullRequestMerge
+      x-api-path-slug: repositoriesusernamerepo-slugpullrequestspull-request-idmerge-post
+      parameters:
+      - in: body
+        name: _body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Repositories
+      - Username
+      - Repo
+      - Slug
+      - Pullrequests
+      - Pull
+      - Request
+      - ""
+      - Merge
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

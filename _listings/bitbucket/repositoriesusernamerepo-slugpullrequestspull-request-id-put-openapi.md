@@ -3,8 +3,13 @@ swagger: "2.0"
 x-collection-name: Bitbucket
 x-complete: 0
 info:
-  title: Bitbucket Parameters Repositories Username Repo Slug Pullrequests Pull Request  Activity
-  description: Parameters repositories username repo slug pullrequests pull request  activity
+  title: Bitbucket Update Repositories Username Repo Slug Pullrequests Pull Request
+  description: |-
+    Mutates the specified pull request.
+
+    This can be used to change the pull request's branches or description.
+
+    Only open pull requests can be mutated.
   termsOfService: https://www.atlassian.com/legal/customer-agreement
   contact:
     name: Bitbucket Support
@@ -103,59 +108,6 @@ paths:
       - Pullrequests
       - Pull
       - Request
-  /repositories/{username}/{repo_slug}/pullrequests/{pull_request_id}/activity:
-    get:
-      summary: Get Repositories Username Repo Slug Pullrequests Pull Request  Activity
-      description: |-
-        Returns a paginated list of the pull request's activity log.
-
-        This includes comments that were made by the reviewers, updates and
-        approvals.
-      operationId: getRepositoriesUsernameRepoSlugPullrequestsPullRequestActivity
-      x-api-path-slug: repositoriesusernamerepo-slugpullrequestspull-request-idactivity-get
-      parameters:
-      - in: path
-        name: pull_request_id
-        description: The id of the pull request
-      - in: path
-        name: repo_slug
-        description: 'This can either be the repository slug or the UUID of the repository,surrounded
-          by curly-braces, for example: `{repository UUID}`'
-      - in: path
-        name: username
-        description: 'This can either be the username or the UUID of the user,surrounded
-          by curly-braces, for example: `{user UUID}`'
-      responses:
-        200:
-          description: OK
-      tags:
-      - Repositories
-      - Username
-      - Repo
-      - Slug
-      - Pullrequests
-      - Pull
-      - Request
-      - ""
-      - Activity
-    parameters:
-      summary: Parameters Repositories Username Repo Slug Pullrequests Pull Request  Activity
-      description: Parameters repositories username repo slug pullrequests pull request  activity
-      operationId: parametersRepositoriesUsernameRepoSlugPullrequestsPullRequestActivity
-      x-api-path-slug: repositoriesusernamerepo-slugpullrequestspull-request-idactivity-parameters
-      responses:
-        200:
-          description: OK
-      tags:
-      - Repositories
-      - Username
-      - Repo
-      - Slug
-      - Pullrequests
-      - Pull
-      - Request
-      - ""
-      - Activity
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

@@ -7,8 +7,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1691-yodle
 x-kinRank: "8"
 x-alexaRank: "84912"
 tags: Pull
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/pull/master/_listings/envestnet/apis.md
 specificationVersion: "0.14"
 apis:
